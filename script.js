@@ -1,7 +1,9 @@
 function startCountdown() {
     var warningElement = document.getElementById('warning');
     var countdownElement = document.getElementById('countdown');
-    var totalTime = 10; // Set a smaller value for testing (10 seconds)
+    
+    // Set the initial time to 03:50:00
+    var totalTime = (3 * 60 + 50) * 60; // 3 hours and 50 minutes in seconds
 
     function updateCountdown() {
         var hours = Math.floor(totalTime / 3600);
